@@ -222,7 +222,9 @@ footer .container {
     margin-bottom: 5px;
 }
 
-.schedule-page form input, .schedule-page form textarea {
+.schedule-page form input, 
+.schedule-page form textarea, 
+.schedule-page form select {
     width: 80%;
     font-size: 1em;
     padding: 10px;
@@ -231,7 +233,8 @@ footer .container {
     border-radius: 4px;
 }
 
-.schedule-page form input[type="checkbox"], .schedule-page form input[type="radio"] {
+.schedule-page form input[type="checkbox"], 
+.schedule-page form input[type="radio"] {
     width: auto;
     margin-right: 10px;
 }
@@ -302,3 +305,10 @@ footer .container {
         padding: 8px 15px;
     }
 }
+
+        ul.no-bullets {
+            list-style-type: none; /* Remove bullet points */
+            padding-left: 0; /* Remove left padding */
+        }
+
+      
