@@ -13,13 +13,13 @@
                 <a href="index.html" id="home-btn">Home</a>
             </nav>
             <h1>Schedule a Tour</h1>
-            <h6>Monday-Friday from 8-5pm</h6>
+            <h6>Monday-Friday from 5am-Midnight</h6>
         </div>
     </header>
     <main>
         <div class="schedule-container">
             <h2>Caregiver Details</h2>
-            <form id="schedule-form" action="https://us-central1-YOUR_PROJECT_ID.cloudfunctions.net/api/schedule" method="POST">
+            <form id="schedule-form" action="/schedule" method="POST">
                 <!-- Caregiver Details -->
                 <div class="form-group">
                     <label for="caregiver-first-name">Caregiver First Name:</label>
@@ -44,6 +44,10 @@
                 <div class="form-group">
                     <label for="tour-date">Choose your tour date:</label>
                     <input type="date" id="tour-date" name="tour-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="tour-time">Choose your tour time:</label>
+                    <input type="time" id="tour-time" name="tour-time" required>
                 </div>
                 <div class="form-group">
                     <label for="start-date">Desired Start Date:</label>
@@ -108,6 +112,7 @@
                     <label for="how-did-you-hear">How Did You Hear About Us?</label>
                     <input type="text" id="how-did-you-hear" name="how-did-you-hear" required>
                 </div>
+                
                 <div class="form-group">
                     <label for="additional-comments">Feel free to share any further notes about your enrollment needs:</label>
                     <textarea id="additional-comments" name="additional-comments" rows="4"></textarea>
